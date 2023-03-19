@@ -1,16 +1,15 @@
 {
   "schemaVersion": 1,
-  "id": "transparent-background",
+  "id": "lucys-silly-little-mod",
   "version": "${version}",
-  "name": "Transparent Background",
-  "description": "Don't render the translucent background behind some menus",
+  "name": "Lucy's silly little Fabric mod",
+  "description": "My silly little Fabric mod :D",
   "authors": [],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/transparent-background/icon.png",
   "environment": "*",
   "mixins": [
-    "transparent-background.mixins.json"
+    "lucys-silly-little-mod.mixins.json"
   ],
   "depends": {
     "minecraft": "1.19.3"

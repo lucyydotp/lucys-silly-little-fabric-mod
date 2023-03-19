@@ -1,4 +1,4 @@
-package net.lucypoulton.transparentbackground.mixin;
+package net.lucypoulton.sillylittlemod.mixin;
 
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.math.MatrixStack;
@@ -11,10 +11,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class ScreenMixin {
     @Inject(
             at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screen/Screen;fillGradient(Lnet/minecraft/client/util/math/MatrixStack;IIIIII)V"),
-            method = "renderBackground(Lnet/minecraft/client/util/math/MatrixStack;I)V",
+            method = "renderBackground(Lnet/minecraft/client/util/math/MatrixStack;)V",
             cancellable = true
     )
-    public void renderBackground(MatrixStack matrices, int vOffset, CallbackInfo ci) {
+    public void renderBackground(MatrixStack matrices, CallbackInfo ci) {
         ci.cancel();
     }
 }
