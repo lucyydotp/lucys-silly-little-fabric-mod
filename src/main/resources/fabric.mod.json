@@ -8,5 +8,8 @@
   "environment": "client",
   "mixins": [
     "lucys-silly-little-mod.mixins.json"
-  ]
+  ],
+  "depends": {
+    "minecraft": "1.20.4"
+  }
 }
