@@ -1,14 +1,14 @@
 plugins {
-    id("fabric-loom") version "1.1-SNAPSHOT"
+    id("fabric-loom") version "1.16-SNAPSHOT"
 }
 
-version = "1.0.1"
-group = "net.lucypoulton"
+version = "1.0.2"
+group = "me.lucyydotp"
 
-java.toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+java.toolchain.languageVersion.set(JavaLanguageVersion.of(21))
 
 dependencies {
-    minecraft("com.mojang:minecraft:1.20.4")
+    minecraft("com.mojang:minecraft:1.21.11")
     mappings(loom.officialMojangMappings())
     modImplementation("net.fabricmc:fabric-loader:0.15.7")
 
